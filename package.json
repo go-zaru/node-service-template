@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "name": "@org/node-package-template",
+  "version": "0.1.0",
+  "description": "Add description here",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "build": "npm run clean && npm run lint && tsc && npm run copy:md",
+    "copy:package": "cp package.json lib/package.json",
+    "copy:readme": "cp README.md lib/README.md",
+    "copy:changelog": "cp CHANGELOG.md lib/CHANGELOGE.md",
+    "copy:md": "npm run copy:readme && npm run copy:changelog",
+    "publish:lib": "npm run copy:package && npm publish ./lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/go-zaru/node-package-template.git"
+  },
+  "keywords": [
+    "Template"
+  ],
+  "author": "Michael Phelan <phelan.map@gmail.com> (https://github.com/phelanma/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/go-zaru/node-package-template/issues"
+  },
+  "homepage": "https://github.com/go-zaru/node-package-template#readme",
+  "devDependencies": {
+    "@hapi/code": "^5.3.1",
+    "@hapi/lab": "^19.0.1",
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^12.0.7",
+    "dotenv": "^8.0.0",
+    "sinon": "^7.3.2",
+    "tslint": "^5.17.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.5.1"
+  }
+}
