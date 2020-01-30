@@ -1,1 +1,1 @@
-export * from './createService.ts'
+export * from './createService'

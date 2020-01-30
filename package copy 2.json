@@ -1,8 +1,8 @@
 {
-  "name": "@go-zaru/node-service-template",
-  "private": true,
+  "name": "@go-zaru/logger",
   "version": "0.1.0",
-  "description": "Add description here",
+  "description": "Interface wrapper for application logs ",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "version": "auto-changelog -p && git add CHANGELOG.md",
@@ -22,19 +22,8 @@
     "test:bundle": "npm pack ./lib --dry-run",
     "dev": "node -r dotenv/config ./tests/dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/go-zaru/node-package-template.git"
-  },
-  "keywords": [
-    "Template"
-  ],
-  "author": "Michael Phelan <phelan.map@gmail.com> (https://github.com/phelanma/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/go-zaru/node-package-template/issues"
-  },
-  "homepage": "https://github.com/go-zaru/node-package-template#readme",
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "@hapi/code": "^8.0.1",
     "@hapi/lab": "^22.0.3",
@@ -51,7 +40,9 @@
     "husky": "^4.2.1"
   },
   "dependencies": {
-
+    "logform": "^2.1.2",
+    "winston": "^3.2.1",
+    "winston-transport": "^4.3.0"
   },
   "husky": {
     "hooks": {
