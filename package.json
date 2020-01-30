@@ -50,9 +50,7 @@
     "typescript": "^3.7.5",
     "husky": "^4.2.1"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "husky": {
     "hooks": {
       "pre-push": "npm run build && npm run lint && npm run test"
