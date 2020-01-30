@@ -1,7 +1,7 @@
 {
   "name": "@go-zaru/node-service-template",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Add description here",
   "main": "index.js",
   "scripts": {
